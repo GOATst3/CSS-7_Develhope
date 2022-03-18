@@ -1,0 +1,34 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "gren gren gren"
+    "yello redd blu"
+    "yello redd blu"
+    "orang orang blu";
+}
+
+#green{
+    grid-area: gren;
+}
+#yellow{
+    grid-area: yello;
+}
+#red{
+    grid-area: redd;
+}
+#orange{
+    grid-area: orang;
+}
+#blue{
+    grid-area: blu;
+}
+
+ul{
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr;
+}
+
+ul :first-child, ul :nth-child(3){
+    grid-row: 1/2; 
+}
